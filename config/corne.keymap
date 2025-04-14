@@ -19,9 +19,7 @@
 
 &mt { quick_tap_ms = <219>; };
 
-&led_strip {
-    chain-length = <21>;
-};
+&led_strip { chain-length = <21>; };
 
 / {
     behaviors {
@@ -98,7 +96,7 @@
 
         SingleQuote {
             bindings = <&kp APOSTROPHE>;
-            key-positions = <22 23>;
+            key-positions = <24 25>;
             timeout-ms = <20>;
         };
 
@@ -197,6 +195,11 @@
         DIV {
             bindings = <&kp SLASH>;
             key-positions = <28 27>;
+        };
+
+        DELE {
+            bindings = <&kp DEL>;
+            key-positions = <22 23>;
         };
     };
 };
