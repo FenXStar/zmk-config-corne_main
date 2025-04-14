@@ -19,6 +19,10 @@
 
 &mt { quick_tap_ms = <219>; };
 
+&led_strip {
+    chain-length = <42>;
+};
+
 / {
     behaviors {
         tdF: tap_dance_lang1 {
