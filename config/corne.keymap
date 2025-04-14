@@ -88,13 +88,13 @@
 
         DoubleQuote {
             bindings = <&kp DOUBLE_QUOTES>;
-            key-positions = <15 16>;
+            key-positions = <12 13>;
             timeout-ms = <20>;
         };
 
         SingleQuote {
             bindings = <&kp APOSTROPHE>;
-            key-positions = <19 20>;
+            key-positions = <22 23>;
             timeout-ms = <20>;
         };
 
