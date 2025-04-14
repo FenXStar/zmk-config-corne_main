@@ -3,7 +3,7 @@ layers:
   default: [ESC, Q, W, E, R, T, Y, U, I, O, P, '[', TAB, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT, Z, X, C, V, B, N, M, ',', ., /, ']', LCTRL, lower, SPACE, ENTER,
     raise, BACKSPACE]
   lower:
-  - '~'
+  - '`'
   - '1'
   - '2'
   - '3'
@@ -15,7 +15,7 @@ layers:
   - '9'
   - '0'
   - '-'
-  - '`'
+  - '~'
   - '!'
   - '@'
   - '#'
@@ -32,7 +32,7 @@ layers:
   - ''
   - ''
   - ''
-  - adjust
+  - fbuttons
   - ''
   - ''
   - ''
@@ -53,11 +53,11 @@ layers:
   - ''
   - PRINTSCREEN
   - ''
-  - PG UP
+  - HOME
   - UP
-  - PG DN
+  - END
+  - DELETE
   - BACKSPACE
-  - DEL
   - TAB
   - ''
   - ''
@@ -76,10 +76,10 @@ layers:
   - ''
   - ''
   - ''
+  - adjust
+  - PAGE DOWN
   - ''
-  - HOME
-  - ''
-  - END
+  - PG UP
   - PREVIOUS
   - NEXT
   - RCTRL
@@ -87,50 +87,7 @@ layers:
   - SPACE
   - ENTER
   - {type: held}
-  - fbuttons
-  fbuttons:
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
-  - F11
-  - F12
-  - TAB
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - LEFT SHIFT
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - RCTRL
-  - ''
-  - ''
-  - ''
-  - {type: held}
-  - {type: held}
   adjust:
   - '&bootloader'
   - '&sys_reset'
@@ -161,6 +118,7 @@ layers:
   - ''
   - ''
   - ''
+  - ''
   - {type: held}
   - ''
   - ''
@@ -169,6 +127,48 @@ layers:
   - ''
   - ''
   - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  fbuttons:
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - F11
+  - F12
+  - TAB
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - LEFT SHIFT
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - RCTRL
   - {type: held}
   - ''
   - ''
@@ -191,15 +191,31 @@ combos:
   k: '"'
 - p: [19, 20]
   k: ''''
-- p: [0, 12]
-  k: '~'
-- p: [12, 24]
+- p: [0, 1]
   k: '`'
+- p: [2, 3]
+  k: '~'
 - p: [3, 4]
   k: '-'
-- p: [2, 3]
-  k: +
 - p: [7, 8]
+  k: +
+- p: [15, 16]
   k: _
 - p: [8, 9]
   k: '|'
+- p: [19, 20]
+  k: '='
+- p: [20, 21]
+  k: '&'
+- p: [32, 33]
+  k: ^
+- p: [11, 10]
+  k: BACKSPACE
+- p: [14, 15]
+  k: '!'
+- p: [26, 27]
+  k: '?'
+- p: [31, 32]
+  k: '*'
+- p: [28, 27]
+  k: /
