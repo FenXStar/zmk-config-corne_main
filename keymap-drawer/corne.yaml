@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: corne}
 layers:
-  default: [ESC, Q, W, E, R, T, Y, U, I, O, P, '[', TAB, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT, Z, X, C, V, B, N, M, ',', ., /, ']', LCTRL, lower, SPACE, ENTER,
+  default: ['`', Q, W, E, R, T, Y, U, I, O, P, '[', TAB, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT, Z, X, C, V, B, N, M, ',', ., /, ']', LCTRL, lower, SPACE, ENTER,
     raise, BACKSPACE]
   lower:
   - '`'
@@ -43,8 +43,8 @@ layers:
   - {type: held}
   - SPACE
   - ENTER
-  - '-'
-  - '='
+  - LEFT ALT
+  - BACKSPACE
   raise:
   - {t: ESC, h: toggle}
   - ''
@@ -53,9 +53,9 @@ layers:
   - ''
   - PRINTSCREEN
   - ''
-  - HOME
+  - ''
   - UP
-  - END
+  - ''
   - DELETE
   - BACKSPACE
   - TAB
@@ -64,11 +64,11 @@ layers:
   - ''
   - ''
   - Gui+Sft+S
-  - ''
+  - HOME
   - LEFT
   - DOWN
   - RIGHT
-  - ''
+  - END
   - PLAY PAUSE
   - LEFT SHIFT
   - ''
@@ -172,7 +172,7 @@ layers:
   - {type: held}
   - ''
   - ''
-  - ''
+  - LEFT ALT
   - ''
 combos:
 - p: [4, 5]
@@ -187,37 +187,55 @@ combos:
   k: '{'
 - p: [30, 31]
   k: '}'
-- p: [12, 13]
-  k: '"'
-- p: [24, 25]
-  k: ''''
-- p: [0, 1]
-  k: '`'
-- p: [2, 3]
-  k: '~'
 - p: [3, 4]
-  k: '-'
-- p: [7, 8]
-  k: +
-- p: [15, 16]
   k: _
-- p: [8, 9]
-  k: '|'
-- p: [19, 20]
+- p: [7, 8]
   k: '='
-- p: [20, 21]
-  k: '&'
-- p: [32, 33]
-  k: ^
-- p: [11, 10]
-  k: BACKSPACE
 - p: [14, 15]
-  k: '!'
-- p: [26, 27]
-  k: '?'
+  k: '-'
+- p: [19, 20]
+  k: +
+- p: [27, 28]
+  k: /
 - p: [31, 32]
   k: '*'
-- p: [28, 27]
-  k: /
+- p: [2, 3]
+  k: '~'
+- p: [8, 9]
+  k: '|'
+- p: [14, 15]
+  k: '?'
+- p: [20, 21]
+  k: '!'
+- p: [26, 27]
+  k: ^
+- p: [32, 33]
+  k: '&'
+- p: [0, 1]
+  k: ESC
+- p: [10, 11]
+  k: BACKSPACE
+- p: [12, 13]
+  k: Alt+TAB
 - p: [22, 23]
   k: DEL
+- p: [1, 13]
+  k: '1'
+- p: [2, 14]
+  k: '2'
+- p: [3, 15]
+  k: '3'
+- p: [4, 16]
+  k: '4'
+- p: [5, 17]
+  k: '5'
+- p: [6, 18]
+  k: '6'
+- p: [7, 19]
+  k: '7'
+- p: [8, 20]
+  k: '8'
+- p: [9, 21]
+  k: '9'
+- p: [10, 22]
+  k: '0'
