@@ -121,7 +121,7 @@
 
         MIN {
             bindings = <&kp MINUS>;
-            key-positions = <14 15>;
+            key-positions = <15 16>;
         };
 
         PL {
